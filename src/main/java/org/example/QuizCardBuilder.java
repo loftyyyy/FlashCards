@@ -13,6 +13,8 @@ public class QuizCardBuilder {
         new QuizCardBuilder().go();
     }
     public void go(){
+        JFrame window = new JFrame("Quiz Card Builder");
+        JPanel mainPanel = new JPanel();
 
 
     }

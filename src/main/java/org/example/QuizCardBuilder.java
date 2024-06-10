@@ -1,6 +1,7 @@
 package org.example;
 
 import javax.swing.*;
+import java.awt.*;
 import java.io.File;
 import java.util.ArrayList;
 
@@ -15,6 +16,12 @@ public class QuizCardBuilder {
     public void go(){
         JFrame window = new JFrame("Quiz Card Builder");
         JPanel mainPanel = new JPanel();
+        Font bigFont = new Font("sanserif", Font.BOLD, 24);
+
+        question = createTextArea(bigFont);
+        JScrollPane qScroller = createScroller(question);
+        answer = createTextArea(bigFont);
+        JScrollPane aScroller = createScroller(answer);
 
 
     }
